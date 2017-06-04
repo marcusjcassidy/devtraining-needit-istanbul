@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="NeedIt" max_length="40" name="x_58872_needit_needit" type="collection">
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="open" label="Status" max_length="40" name="u_choice" type="string">
+            <choice>
+                <element label="Open" sequence="0" value="open"/>
+                <element label="In Progress" sequence="1" value="in_progress"/>
+                <element label="On Hold" sequence="2" value="old_hold"/>
+                <element label="Withdrawn" sequence="3" value="withdrawn"/>
+                <element label="Resolved" sequence="4" value="resolved"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Description" mandatory="true" max_length="3000" name="u_description" type="string"/>
+        <element label="Resolved on Creation?" max_length="40" name="u_resolved_on_creation" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Summary" mandatory="true" max_length="150" name="u_summary" type="string"/>
+    </element>
+</database>
